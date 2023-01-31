@@ -39,9 +39,13 @@ export default class Sprite {
         this.x, this.y, this.w, this.h];
       params.map(Math.round);
 
-      ctx.drawImage(this.img, ...params);
+      ctx.drawImage(this.img,
+        params[0], params[1], params[2], params[3],
+        params[4], params[5], params[6], params[7]);
     } else if (sourceParams) {
-      ctx.drawImage(this.img, ...sourceParams, this.x, this.y, this.w, this.h);
+      ctx.drawImage(this.img,
+        sourceParams[0], sourceParams[1], sourceParams[2], sourceParams[3],
+        this.x, this.y, this.w, this.h);
     }
   }
 }
