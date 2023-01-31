@@ -1,0 +1,7 @@
+#+TITLE: README
+
+* Theseus Mythology Project
+
+This game is for an english project about a greek mythology character named Theseus.
+In this game you go through many cutscenes telling the story and are quized along the way.
+At the end, you have to as Theseus, slay the Minotaur!
