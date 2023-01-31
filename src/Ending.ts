@@ -32,6 +32,7 @@ export default async function ending(ctx: CanvasRenderingContext2D) {
 
   return new Promise((resolve, _reject) => {
     setTimeout(() => {
+      cancelAnimationFrame(animationLoop);
       resolve(null);
     }, 25000);
   });
