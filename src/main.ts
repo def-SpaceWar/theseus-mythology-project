@@ -20,9 +20,9 @@ window.onload = async () => {
     throw new Error("Canvas 2D Not Supported!");
   }
 
-  ctx.webkitImageSmoothingEnabled = false;
-  ctx.mozImageSmoothingEnabled = false;
-  ctx.msImageSmoothingEnabled = false;
+  //ctx.webkitImageSmoothingEnabled = false;
+  //ctx.mozImageSmoothingEnabled = false;
+  //ctx.msImageSmoothingEnabled = false;
   ctx.imageSmoothingEnabled = false;
 
   document.getElementById("app")!.appendChild(canvas);
