@@ -46,7 +46,7 @@ export class CharacterTalkBubble {
   animatedTexts: AnimatedText[];
   animNum: number = 0;
 
-  constructor(public image: CanvasImageSource, lines: string[], public bottom = true) {
+  constructor(public image: CanvasImageSource, public characterName: string, lines: string[], public bottom: boolean) {
     this.animatedTexts = [];
 
     for (let i = 0; i < lines.length; i++) {
@@ -76,5 +76,9 @@ export class CharacterTalkBubble {
     } else {
       ctx.drawImage(this.image, 2, 2, 12, 8, 1100, this.bottom ? 640 : 90, 450, 300);
     }
+
+    ctx.fillStyle = "#fff";
+    ctx.font = "30px Comic Sans MS";
+    ctx.fillText(this.characterName, 1000, this.bottom ? 965 : 415);
   }
 }

@@ -18,9 +18,9 @@ export default async function theseusBorn(ctx: CanvasRenderingContext2D) {
   const aethra = new Sprite(1050, 450, 500, 500, aethraImage);
 
   const dialogue = [
-    new CharacterTalkBubble(aegusImage, ["I want to have a son, because I need an",
+    new CharacterTalkBubble(aegusImage, "Aegeus", ["I want to have a son, because I need an",
       "heir to the throne of Athens."], false),
-    new CharacterTalkBubble(aethraImage, ["Count me in!"], false),
+    new CharacterTalkBubble(aethraImage, "Aethra", ["Count me in!"], false),
   ];
   let dialogueIdx = 0;
 

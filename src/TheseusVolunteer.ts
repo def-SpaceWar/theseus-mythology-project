@@ -17,10 +17,10 @@ export default async function theseusVolunteer(ctx: CanvasRenderingContext2D) {
   const aegeus = new Sprite(1050, 450, 500, 500, aegeusImage);
 
   const dialogue = [
-    new CharacterTalkBubble(aegeusImage, ["Theseus, please do not go. I care for you", "a lot. I do not wish for you to die."], false),
-    new CharacterTalkBubble(theseusImage, ["I can do it. I will stop the Minotaur once", "and for all!"], false),
-    new CharacterTalkBubble(theseusImage, ["Too many innocent Athenians are being", "sacrificed. I must put an end to this."], false),
-    new CharacterTalkBubble(theseusImage, ["I will be one of the 7 young men you send."], false)
+    new CharacterTalkBubble(aegeusImage, "Aegeus", ["Theseus, please do not go. I care for you", "a lot. I do not wish for you to die."], false),
+    new CharacterTalkBubble(theseusImage, "Theseus", ["I can do it. I will stop the Minotaur once", "and for all!"], false),
+    new CharacterTalkBubble(theseusImage, "Theseus", ["Too many innocent Athenians are being", "sacrificed. I must put an end to this."], false),
+    new CharacterTalkBubble(theseusImage, "Theseus", ["I will be one of the 7 young men you send."], false)
   ];
   let dialogueIdx = 0;
 

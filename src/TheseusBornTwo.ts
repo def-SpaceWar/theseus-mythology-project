@@ -20,7 +20,7 @@ export default async function theseusBornTwo(ctx: CanvasRenderingContext2D) {
   const boulder = new Sprite(600, 500, 250, 250, boulderImage, false);
 
   const dialogue = [
-    new CharacterTalkBubble(aegusImage, ["If our son can lift that boulder, he may", "claim the throne of Athens."], false),
+    new CharacterTalkBubble(aegusImage, "Aegeus", ["If our son can lift that boulder, he may", "claim the throne of Athens."], false),
   ];
   let dialogueIdx = 0;
 

@@ -17,10 +17,10 @@ export default async function preBossFight(ctx: CanvasRenderingContext2D) {
   const ariadne = new Sprite(1050, 50, 500, 500, ariadneImage);
 
   const dialogue = [
-    new CharacterTalkBubble(ariadneImage, ["Take this sword so you can slay the ", "minotaur, and take this spool of string", "so you don't get lost in the Labyrinth."], true),
-    new CharacterTalkBubble(theseusImage, ["Why are you helping me?"], false),
-    new CharacterTalkBubble(ariadneImage, ["Because I pity you."], true),
-    new CharacterTalkBubble(new Image(), ["Note: she actually falls in love with", "Theseus, but nothing ever happens", "between them."], false)
+    new CharacterTalkBubble(ariadneImage, "Daughtor of Minos (Ariadne)", ["Take this sword so you can slay the ", "minotaur, and take this spool of string", "so you don't get lost in the Labyrinth."], true),
+    new CharacterTalkBubble(theseusImage, "Theseus", ["Why are you helping me?"], false),
+    new CharacterTalkBubble(ariadneImage, "Ariadne", ["Because I pity you."], true),
+    new CharacterTalkBubble(new Image(), "Narrator", ["Note: she actually falls in love with", "Theseus, but nothing ever happens", "between them."], false)
   ];
   let dialogueIdx = 0;
 

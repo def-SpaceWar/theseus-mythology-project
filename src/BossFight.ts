@@ -26,7 +26,7 @@ export default async function bossFight(ctx: CanvasRenderingContext2D) {
   const theseus = new Sprite(50, 450, 500, 500, theseusImage);
   const minotaur = new Sprite(950, 550, 500, 500, minotaurImage);
 
-  const spaceToAttack = new AnimatedText([100, 160, ctx.canvas.width], "Space To Attack", 0.5, 60, { color: "#2F8", strokeColor: "#1B5" }, 3);
+  const spaceToAttack = new AnimatedText([100, 160, ctx.canvas.width], "Space To Attack", 0.5, 60, { color: "#444", strokeColor: "#333" }, 3);
   const rightToMove = new AnimatedText([100, 240, ctx.canvas.width], "Right Arrow To Move", 0.65, 60, { color: "#2F8", strokeColor: "#1B5" }, 3);
 
   let movePlayer = false;

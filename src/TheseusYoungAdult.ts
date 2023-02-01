@@ -21,10 +21,10 @@ export default async function theseusYoungAdult(ctx: CanvasRenderingContext2D) {
   const boulder = new Sprite(350, 650, 250, 250, boulderImage, false);
 
   const dialogue = [
-    new CharacterTalkBubble(aethraImage, ["Theseus, what are you doing?"], false),
-    new CharacterTalkBubble(theseusImage, ["I can lift the boulder mom!"], false),
-    new CharacterTalkBubble(aethraImage, ["Thats amazing!"], false),
-    new CharacterTalkBubble(aethraImage, ["You can now claim the throne to Athens!"], false)
+    new CharacterTalkBubble(aethraImage, "Aethra", ["Theseus, what are you doing?"], false),
+    new CharacterTalkBubble(theseusImage, "Theseus", ["I can lift the boulder mom!"], false),
+    new CharacterTalkBubble(aethraImage, "Aethra", ["Thats amazing!"], false),
+    new CharacterTalkBubble(aethraImage, "Aethra", ["You can now claim the throne to Athens!"], false)
   ];
   let dialogueIdx = 0;
 
